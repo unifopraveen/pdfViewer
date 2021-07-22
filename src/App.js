@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+import React,{useState } from 'react';
+import PdfViewer from './components/PdfViewer.js';
+import Header from './components/Header.js';
+import Controls from './components/Controls.js';
 import './App.css';
 
+
 function App() {
+
+  const [zoom, setZoom] = useState(1);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <div className='pdf-container1'>
+        <PdfViewer zoom={zoom}/>
+        <Controls zoom={zoom} setZoom={setZoom}/>
+      </div> 
     </div>
   );
 }

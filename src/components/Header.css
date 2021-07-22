@@ -1,0 +1,32 @@
+.header{
+    width: 100%;
+    height: 8%;
+    display: flex;
+    background: white;
+    margin: 0;
+  padding: 0;
+}
+
+.header img{
+    height: 70%;
+    object-fit: contain;
+    margin-left: 1.3rem;
+    margin-right: 0.5rem;
+}
+
+.filename{
+  width: 90%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.closeIcons{
+  width:10%;
+  height: 100%;
+  color: aquamarine;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
